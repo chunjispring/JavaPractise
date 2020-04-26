@@ -1,3 +1,5 @@
+import learn.helloworld.Dependency;
+import learn.helloworld.HelloWorld;
 import org.junit.Test;
 
 import static org.fest.assertions.api.Assertions.assertThat;
@@ -7,8 +9,8 @@ import static org.mockito.Mockito.when;
 
 public class HelloWorldTest {
     @Test
-    public void hello_world_test(){
-       assertThat("Hello World").isEqualTo("Hello World");
+    public void hello_world_test() {
+        assertThat("Hello World").isEqualTo("Hello World");
     }
 
     @Test
