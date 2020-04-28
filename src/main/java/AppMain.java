@@ -1,6 +1,7 @@
+import hgs.angel.Monkey;
 import learn.helloworld.Dependency;
 import learn.helloworld.HelloWorld;
-import hgs.angel.Monkey;
+import mypack.Sub;
 
 
 /**
@@ -17,5 +18,9 @@ public class AppMain {
         HelloWorld he = new HelloWorld(de);
 
         System.out.println(he.beenCalled());
+
+        Sub sb = new Sub();
+        Sub sub = new Sub(1, 2);
+        System.out.println("a=" + sub.getA() + " b=" + sub.getB());
     }
 }

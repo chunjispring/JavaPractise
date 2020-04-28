@@ -1,13 +1,23 @@
 package hgs.angel;
 
-import java.util.Objects;
+import lombok.EqualsAndHashCode;
+import lombok.Getter;
+import lombok.Setter;
+import lombok.ToString;
 
 /**
  * Created by spring on 3/28/20.
  *
  * @author spring
  */
+
+@Getter
+@Setter
+@EqualsAndHashCode
+@ToString
 public class Monkey {
+    @Getter
+    @Setter
     public static int count;
     char gender;
     private String name;
@@ -38,67 +48,8 @@ public class Monkey {
         count++;
     }
 
-    public static int getCount() {
-        return count;
-    }
-
-    public static void setCount(int count) {
-        Monkey.count = count;
-    }
-
-    @Override
-    public boolean equals(Object o) {
-        if (this == o) {
-            return true;
-        }
-
-        if (!(o instanceof Monkey)) {
-            return false;
-        }
-
-        final Monkey other = (Monkey) o;
-        return this.name.equals(other.name);
-    }
-
     public void speak() {
         System.out.println("大家好，我是" + name);
     }
 
-    public char getGender() {
-        return gender;
-    }
-
-    public void setGender(char gender) {
-        this.gender = gender;
-    }
-
-    public int getAge() {
-        return age;
-    }
-
-    public void setAge(int age) {
-        this.age = age;
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    @Override
-    public int hashCode() {
-        return Objects.hash(gender, name, age);
-    }
-
-    @Override
-    public String toString() {
-        return "Monkey{" +
-                "gender=" + gender +
-                ", name='" + name + '\'' +
-                ", age=" + age +
-                '}';
-    }
 }
