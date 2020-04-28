@@ -13,11 +13,9 @@ import lombok.ToString;
 
 @Getter
 @Setter
-@EqualsAndHashCode
 @ToString
+@EqualsAndHashCode
 public class Monkey {
-    @Getter
-    @Setter
     public static int count;
     char gender;
     private String name;

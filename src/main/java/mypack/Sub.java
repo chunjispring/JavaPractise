@@ -5,8 +5,8 @@ import lombok.Getter;
 /**
  * @author wangchunji
  */
-@Getter
 public class Sub extends Base {
+    @Getter
     private int b;
 
     public Sub() {

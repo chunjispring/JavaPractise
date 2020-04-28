@@ -1,13 +1,12 @@
 package mypack;
 
-
 import lombok.Getter;
 
 /**
  * @author wangchunji
  */
-@Getter
 public class Base {
+    @Getter
     private int a;
 
     public Base() {

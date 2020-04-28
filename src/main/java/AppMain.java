@@ -19,7 +19,7 @@ public class AppMain {
 
         System.out.println(he.beenCalled());
 
-        Sub sb = new Sub();
+        //Sub sb = new Sub();
         Sub sub = new Sub(1, 2);
         System.out.println("a=" + sub.getA() + " b=" + sub.getB());
     }
