@@ -34,7 +34,7 @@ public class Monkey {
      * 当猴子的姓名和年龄都未知时，就调用此构造方法
      */
     public Monkey() {
-        this("无名氏", -1);
+        this("无名氏");
         count++;
     }
 
