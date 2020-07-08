@@ -1,7 +1,4 @@
-import hgs.angel.Monkey;
-import learn.helloworld.Dependency;
-import learn.helloworld.HelloWorld;
-import mypack.Sub;
+import mypack.ShapeDrawer;
 
 
 /**
@@ -11,7 +8,7 @@ import mypack.Sub;
  */
 public class AppMain {
     public static void main(String[] args) {
-        Monkey m = new Monkey("孙悟空");
+/*        Monkey m = new Monkey("孙悟空");
         m.speak();
 
         Dependency de = new Dependency();
@@ -21,6 +18,17 @@ public class AppMain {
 
         //Sub sb = new Sub();
         Sub sub = new Sub(1, 2);
-        System.out.println("a=" + sub.getA() + " b=" + sub.getB());
+        System.out.println("a=" + sub.getA() + " b=" + sub.getB());*/
+
+        int n = 9;
+        if (args.length > 0) {
+            try {
+                n = Integer.parseInt(args[0]);
+            } catch (NumberFormatException e) {
+                System.out.println("请输入正确的形状大小");
+                return;
+            }
+        }
+        ShapeDrawer.draw(n);
     }
 }
