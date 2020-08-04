@@ -1,0 +1,2 @@
+shape=2
+symbol=#
