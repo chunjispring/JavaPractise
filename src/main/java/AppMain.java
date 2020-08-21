@@ -1,7 +1,4 @@
-import mypack.Md2;
-import mypack.ShapeDrawer;
-
-import java.security.NoSuchAlgorithmException;
+import demo.JedisTest;
 
 /**
  * Created by spring on 3/28/20.
@@ -33,11 +30,15 @@ public class AppMain {
 //        }
 //        ShapeDrawer.draw(n);
 
-        try {
+
+
+/*        try {
             Md2.MD2();
         } catch (NoSuchAlgorithmException e) {
             e.printStackTrace();
-        }
+        }*/
 
+
+        JedisTest.runTest();
     }
 }
