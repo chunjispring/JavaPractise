@@ -1,4 +1,6 @@
 import demo.JedisTest;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 /**
  * Created by spring on 3/28/20.
@@ -6,6 +8,8 @@ import demo.JedisTest;
  * @author spring
  */
 public class AppMain {
+    private static final Logger logger = LoggerFactory.getLogger(AppMain.class);
+
     public static void main(String[] args) {
 /*        Monkey m = new Monkey("孙悟空");
         m.speak();
@@ -38,7 +42,7 @@ public class AppMain {
             e.printStackTrace();
         }*/
 
-
+        logger.debug("{}，是个非常不要脸的程序员", "沉默王二");
         JedisTest.runTest();
     }
 }
